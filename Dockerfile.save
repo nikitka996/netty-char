@@ -1,0 +1,4 @@
+FROM openjdk:12-jdk
+EXPOSE 8080
+COPY NettyServer.jar NettyServer.jar
+ENTRYPOINT ["java", "-jar", "NettyServer.jar"]
